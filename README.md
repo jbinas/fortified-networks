@@ -19,7 +19,7 @@ Abstract: Deep networks have achieved impressive results across a variety of imp
 
 To perform a whitebox attack on a CNN trained on MNIST without fortification (no reconstruction loss on the DAE,) run
 ```
-$ python mnist_whitebox.py
+$ python run_whitebox.py
 ```
 
 After 10 epochs, the output should be something like
@@ -34,7 +34,7 @@ reconstruction error on adv->clean:     0.0000
 
 Now, train the same model with reconstruction loss on the DAE:
 ```
-$ python mnist_whitebox.py --rec_err
+$ python run_whitebox.py --rec_err
 ```
 
 After around 10 epochs, this should yield something like
